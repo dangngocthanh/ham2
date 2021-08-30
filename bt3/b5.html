@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rwed</title>
+</head>
+<body>
+<script>
+let arr1=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'],
+        arr2=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+function starCheck(star){
+  let location=arr1.indexOf(star)
+  if (location>-1) {
+    return arr2[location]
+  }else{
+    return "Khong tim thay ngoi sao nay"
+  }
+}
+let star=prompt('nhap ten ngoi sao')
+alert(starCheck(star))
+</script>
+</body>
+</html>

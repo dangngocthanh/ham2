@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rwed</title>
+</head>
+<body>
+<script>
+    function Checksnt(number){
+        for (let i= 2;i<number;i++){
+            if (number%2===0) return "Khong phai snt"
+        }
+        return "day la snt"
+    }
+    let check=+prompt('nhap so can check')
+    check=Checksnt(check)
+    alert(check)
+</script>
+</body>
+</html>
